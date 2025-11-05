@@ -1,0 +1,1098 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 196, 4);
+}
+
+.logo img{
+    height: 50px;
+    margin-left: 15px;
+}
+
+.nav{
+    display: flex;
+    gap: 15px;
+    margin-right: 18px;
+}
+
+.nav a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* Hero Section (main1 original) */
+.hero-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-left: 30px;
+    height: 90%;
+}
+
+.hero-image img{
+    width: 400px;
+    height: auto;
+    margin-left: 150px;
+}
+
+.hero-content h2{
+    font-size: 5em;
+    color: #000;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 70%;
+    margin-left: 200px;
+}
+
+.hero-content p{
+    font-size: 1.2em;
+    color: #333;
+    width: 40%;
+    margin-left: 200px;
+    font-weight: bolder;
+}
+
+.hero-content a{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(255, 196, 4);
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 1px;
+    margin-left: 200px;
+    width: 20%;
+}
+
+/* Stats Section (seccion original) */
+.stats-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(208, 218, 218);
+    width: 80%;
+    margin-top: 60px;
+    margin-left: 200px;
+    min-height: 500px;
+
+    position: relative;   /* permite controlar la superposición */
+    z-index: 2;           /* se pone por encima del siguiente bloque */
+    margin-bottom: -100px; /* este es el truco: empuja hacia abajo, superponiendo */
+    border-radius: 5px;   /* opcional, para un efecto más limpio */
+    box-shadow: 0 30px 60px rgba(0,0,0,0.1); /* opcional: sombra suave */
+}
+
+.stats-content{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.stats-content h2{
+    font-size: 3.5em;
+    margin-left: 100px;
+    margin-top: 10px;
+    color: rgb(255, 196, 4);
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 60%;
+}
+
+.stats-content p{
+    font-size: 1em;
+    color: #333;
+    width: 45%;
+    margin-left: 100px;
+    font-weight: bolder;
+}
+
+.stats-content a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 100px;
+}
+
+.stats-graphs{
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    margin-right: 50px;
+    margin-bottom: 30px;
+}
+
+/* Help Section (main2 original) */
+.help-section{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(255, 196, 4);
+    justify-content: space-between;
+    margin-top: 0;/* elimina el espacio para que se vea la superposición */
+    min-height: 800px;
+    position: relative;
+    z-index: 1;
+}
+
+.help-content{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-left: 160px;
+    margin-top: 200px;
+}
+
+.help-content h2{
+    font-size: 5em;
+    color: #000;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100%;
+}
+
+.help-content p{
+    font-size: 1em;
+    color: #333;
+    width: 55%;
+    font-weight: bolder;
+}
+
+.help-content a{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 1px;
+    width: 35%;
+}
+
+.help-image{
+    margin-right: 400px;
+}
+
+.help-image img{
+    width: 160%;
+    height: auto;
+    margin-top: 350px;
+}
+
+/* Percentage Section (percent original) */
+.percentage-section {
+    min-height: 900px; /* antes 500px */
+    display: flex;
+    align-items: center; /* centra verticalmente .datos */
+    justify-content: center; /* opcional: centra horizontalmente */
+}
+
+.percentage-section {
+    background-color: rgb(208, 218, 218);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 85%;
+    margin-left: auto; 
+    margin-right: auto; /* lo centra */
+    padding: 40px; /* da más espacio interno */
+    border-radius: 10px; /* mejora visual */
+    box-shadow: 0 30px 60px rgba(0,0,0,0.1);
+}
+
+.percentage-image img{
+    height: 90%;
+}
+
+.percentage-content{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.percentage-content h2{
+    font-size: 3.5em;
+    color: rgb(255, 196, 4);
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100%;
+}
+
+.percentage-content p{
+    font-size: 1em;
+    color: #333;
+    width: 75%;
+    font-weight: bolder;
+}
+
+.percentage-content a{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 1px;
+    width: 63%;
+}
+
+.percentage-content img{
+    width: 50%;
+    height: auto;
+}
+
+/* About Section (about original) */
+.about-section{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #000;
+    align-items: center;
+    text-align: center;
+    min-height: 950px;
+}
+
+.about-section h2{
+    margin-top: 20px;
+    font-size: 5em;
+    color: rgb(255, 196, 4);
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100%;
+}
+
+.about-section p{
+    margin-top: 20px;
+    font-size: 1em;
+    color: #fff;
+    width: 75%;
+    font-weight: bolder;
+}   
+
+.about-section img{
+    margin-top: 20px;
+    width: 70%;
+    height: auto;
+}
+
+.about-section a{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(255, 196, 4);
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 1px;
+    width: 20%;
+    margin-top: 20px;
+}
+
+/* Team Section (team original) */
+.team-section {
+    display: flex;
+    justify-content: center; /* centra horizontalmente todo */
+    align-items: center;
+    gap: 90px; /* espacio entre imagen y texto */
+    text-align: left;
+    min-height: 950px;
+    padding: 0 100px; /* margen interno lateral limpio */
+    margin-left: 80px;
+}
+
+.team-image img {
+    width: 500px;
+    height: auto;
+    margin-left: 0; /* quita el desplazamiento */
+}
+
+.team-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    margin-left: 0; /* elimina el desplazamiento extra */
+}
+
+.team-content h2{
+    font-size: 5em;
+    color: #000;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100%;
+}
+
+.team-content p{
+    font-size: 1em;
+    color: #333;
+    width: 75%;
+    font-weight: bolder;
+}
+
+.team-content a{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(255, 196, 4);
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 1px;
+    width: 30%;
+}
+
+/* Trial Section (free original) */
+.trial-section{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    background-color: rgb(208, 218, 218);
+    min-height: 750px;
+}
+
+.trial-content{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-left: 80px;
+}
+
+.trial-content h2{
+    font-size: 5em;
+    color: #000;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100%;
+    margin-top: 60px;
+}
+
+.trial-content p{
+    font-size: 1em;
+    color: #333;
+    width: 75%;
+    font-weight: bolder;
+}
+
+.trial-content a{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(255, 196, 4);
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 1px;
+    width: 30%;
+}
+
+/* Newsletter Section (subscribe original) */
+.newsletter-section {
+    display: flex;
+    justify-content: center;  /* centra horizontalmente */
+    align-items: center;      /* centra verticalmente */
+    min-height: 100vh;        /* ocupa toda la pantalla */
+}
+
+.newsletter-form {
+    width: 70%;
+    max-width: 800px;
+    background-color: #000;
+    color: #fff;
+    padding: 60px;
+    border-radius: 2px;
+    margin-left: 90px;
+}
+
+.newsletter-form h3{
+    font-weight: lighter;
+    margin-top: 30px;
+}
+
+.newsletter-form h3, .newsletter-form input,
+.newsletter-form textarea{
+    margin-left: 40px;
+}
+
+.newsletter-form input,
+.newsletter-form textarea {
+    width: 70%;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid white;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 1em;
+    background-color: #000;   /* fondo negro */
+    color: white;             /* texto blanco al escribir */
+    outline: none;            /* elimina borde azul al hacer clic */
+}
+
+/* Efecto visual al hacer foco */
+.newsletter-form input:focus,
+.newsletter-form textarea:focus {
+    border-color: rgb(255, 196, 4); /* cambia a amarillo al seleccionar */
+    box-shadow: 0 0 5px rgb(255, 196, 4);
+}
+
+.name-surname-fields{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.field-group{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.newsletter-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-left: 80px;
+}
+
+.newsletter-content h2{
+    font-size: 5em;
+    color: rgb(255, 196, 4);
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100%;
+}
+
+.newsletter-content p{
+    font-size: 1em;
+    color: #333;
+    width: 75%;
+    font-weight: bolder;
+}
+
+.newsletter-content a{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 1px;
+    width: 30%;
+}
+
+/* Contact Section (map original) */
+.contact-section{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: rgb(255, 196, 4);
+    align-items: center;
+    text-align: center;
+    min-height: 700px;
+}
+
+.contact-section h2{
+    font-size: 5em;
+    color: #000;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.contact-section p{
+    font-size: 1em;
+    color: #333;
+    width: 75%;
+    font-weight: bolder;
+}
+
+.contact-section img{
+    width: 70%;
+    height: auto;
+}
+
+.contact-section a{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 1px;
+    width: 15%;
+    margin-top: 20px;
+}
+
+/* Footer */
+.footer{
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    background-color: #000;
+}
+
+hr{
+    width: 90%;
+    color: #fff;
+    margin-left: 60px;
+}
+
+.footer-links{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.primary-links, .secondary-links{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-left: 20px;
+}
+
+.primary-links a, .secondary-links a{
+    color: rgb(255, 196, 4);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.copyright p{
+    font-size: 1em;
+    color: rgb(255, 196, 4);
+    font-weight: bold;
+}
+
+.social-links{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-left: 180px;
+}
+
+/* Botones para mantener consistencia */
+.cta-button, .read-more, .subscribe-button, .contact-button {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 1px;
+}
+
+/* ===== MEDIA QUERIES RESPONSIVOS ===== */
+
+/* Tablets en orientación horizontal y laptops pequeños (1024px - 768px) */
+@media screen and (max-width: 1024px) {
+    .hero-section,
+    .help-section,
+    .team-section,
+    .trial-section,
+    .newsletter-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .hero-content h2,
+    .help-content h2,
+    .team-content h2,
+    .trial-content h2,
+    .newsletter-content h2,
+    .about-section h2,
+    .contact-section h2 {
+        font-size: 3.5em !important;
+        margin-left: 0 !important;
+        width: 100% !important;
+    }
+
+    .hero-content p,
+    .help-content p,
+    .team-content p,
+    .trial-content p,
+    .newsletter-content p,
+    .stats-content p,
+    .percentage-content p {
+        width: 80% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .hero-image img {
+        width: 300px !important;
+        margin-left: 0 !important;
+    }
+
+    .stats-section {
+        width: 90% !important;
+        margin-left: 5% !important;
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .stats-graphs {
+        flex-direction: column;
+        gap: 30px !important;
+    }
+
+    .help-image {
+        margin-right: 0 !important;
+    }
+
+    .help-image img {
+        width: 100% !important;
+        margin-top: 50px !important;
+    }
+
+    .percentage-section {
+        flex-direction: column;
+        width: 90% !important;
+    }
+
+    .percentage-image img {
+        height: auto !important;
+        width: 80% !important;
+    }
+
+    .team-section {
+        margin-left: 0 !important;
+        padding: 0 20px !important;
+    }
+
+    .team-image img {
+        width: 400px !important;
+    }
+
+    .newsletter-form {
+        width: 90% !important;
+        margin-left: 0 !important;
+    }
+
+    .name-surname-fields {
+        flex-direction: column;
+    }
+
+    .field-group {
+        width: 100% !important;
+    }
+}
+
+/* Tablets en orientación vertical (768px - 600px) */
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .nav {
+        margin-top: 15px;
+        margin-right: 0 !important;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero-content h2,
+    .help-content h2,
+    .team-content h2,
+    .trial-content h2,
+    .newsletter-content h2,
+    .about-section h2,
+    .contact-section h2 {
+        font-size: 2.8em !important;
+    }
+
+    .hero-content p,
+    .help-content p,
+    .team-content p,
+    .trial-content p,
+    .newsletter-content p {
+        font-size: 1em !important;
+        width: 90% !important;
+    }
+
+    .hero-content a,
+    .help-content a,
+    .team-content a,
+    .trial-content a,
+    .newsletter-content a,
+    .about-section a,
+    .contact-section a {
+        width: 50% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .stats-section {
+        margin-bottom: -50px !important;
+    }
+
+    .stats-content h2 {
+        font-size: 2.5em !important;
+        margin-left: 0 !important;
+        width: 100% !important;
+        text-align: center;
+    }
+
+    .stats-content p {
+        width: 90% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        text-align: center;
+    }
+
+    .stats-content a {
+        margin-left: 0 !important;
+        text-align: center;
+        display: block;
+    }
+
+    .help-content {
+        margin-left: 0 !important;
+        margin-top: 100px !important;
+        align-items: center;
+    }
+
+    .percentage-content {
+        margin-left: 0 !important;
+        align-items: center;
+        text-align: center;
+    }
+
+    .percentage-content a {
+        width: 80% !important;
+    }
+
+    .team-image img {
+        width: 300px !important;
+    }
+
+    .about-section img,
+    .contact-section img {
+        width: 90% !important;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .primary-links,
+    .secondary-links {
+        margin-left: 0 !important;
+        align-items: center;
+    }
+}
+
+/* Teléfonos grandes (600px - 480px) */
+@media screen and (max-width: 600px) {
+    .hero-content h2,
+    .help-content h2,
+    .team-content h2,
+    .trial-content h2,
+    .newsletter-content h2,
+    .about-section h2,
+    .contact-section h2 {
+        font-size: 2.2em !important;
+    }
+
+    .hero-content p,
+    .help-content p,
+    .team-content p,
+    .trial-content p,
+    .newsletter-content p {
+        font-size: 0.9em !important;
+        width: 95% !important;
+    }
+
+    .hero-image img {
+        width: 250px !important;
+    }
+
+    .stats-section {
+        width: 95% !important;
+        margin-left: 2.5% !important;
+        padding: 20px;
+    }
+
+    .stats-content h2 {
+        font-size: 2em !important;
+    }
+
+    .help-image img {
+        margin-top: 30px !important;
+    }
+
+    .percentage-content h2 {
+        font-size: 2.5em !important;
+    }
+
+    .team-image img {
+        width: 250px !important;
+    }
+
+    .newsletter-form {
+        padding: 30px !important;
+    }
+
+    .newsletter-form input,
+    .newsletter-form textarea {
+        width: 90% !important;
+        margin-left: 0 !important;
+    }
+
+    .newsletter-form h3 {
+        margin-left: 0 !important;
+    }
+
+    .contact-section a {
+        width: 40% !important;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .social-links {
+        margin-left: 0 !important;
+    }
+}
+
+/* Teléfonos pequeños (480px - 320px) */
+@media screen and (max-width: 480px) {
+    .logo img {
+        height: 40px !important;
+    }
+
+    .nav {
+        gap: 10px;
+    }
+
+    .nav a {
+        font-size: 0.9em;
+    }
+
+    .hero-content h2,
+    .help-content h2,
+    .team-content h2,
+    .trial-content h2,
+    .newsletter-content h2,
+    .about-section h2,
+    .contact-section h2 {
+        font-size: 1.8em !important;
+    }
+
+    .hero-content p,
+    .help-content p,
+    .team-content p,
+    .trial-content p,
+    .newsletter-content p {
+        font-size: 0.85em !important;
+    }
+
+    .hero-content a,
+    .help-content a,
+    .team-content a,
+    .trial-content a,
+    .newsletter-content a,
+    .about-section a,
+    .contact-section a {
+        width: 70% !important;
+        padding: 8px 16px !important;
+        font-size: 0.9em;
+    }
+
+    .hero-image img {
+        width: 200px !important;
+    }
+
+    .stats-section {
+        min-height: 400px !important;
+        margin-bottom: -30px !important;
+    }
+
+    .stats-graphs img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .help-section,
+    .percentage-section,
+    .about-section,
+    .team-section,
+    .trial-section {
+        min-height: auto !important;
+        padding: 40px 0;
+    }
+
+    .help-content {
+        margin-top: 50px !important;
+    }
+
+    .percentage-content img {
+        width: 80% !important;
+    }
+
+    .team-image img {
+        width: 200px !important;
+    }
+
+    .about-section p {
+        width: 90% !important;
+    }
+
+    .newsletter-section {
+        min-height: auto !important;
+        padding: 40px 0;
+        flex-direction: column-reverse;
+    }
+
+    .newsletter-content {
+        margin-left: 0 !important;
+        margin-bottom: 30px;
+    }
+
+    .contact-section a {
+        width: 60% !important;
+    }
+
+    hr {
+        margin-left: 5% !important;
+        width: 90% !important;
+    }
+}
+
+/* Teléfonos muy pequeños (menos de 320px) */
+@media screen and (max-width: 320px) {
+    .hero-content h2,
+    .help-content h2,
+    .team-content h2,
+    .trial-content h2,
+    .newsletter-content h2,
+    .about-section h2,
+    .contact-section h2 {
+        font-size: 1.5em !important;
+    }
+
+    .hero-content p,
+    .help-content p,
+    .team-content p,
+    .trial-content p,
+    .newsletter-content p {
+        font-size: 0.8em !important;
+    }
+
+    .hero-image img {
+        width: 180px !important;
+    }
+
+    .team-image img {
+        width: 180px !important;
+    }
+
+    .newsletter-form {
+        padding: 20px !important;
+    }
+
+    .nav {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
+
+/* Dispositivos con alta resolución (2x, 3x) */
+@media screen and (-webkit-min-device-pixel-ratio: 2), 
+       screen and (min-resolution: 192dpi) {
+    .logo img,
+    .footer-logo img,
+    .social-links img {
+        image-rendering: -webkit-optimize-contrast;
+    }
+}
+
+/* Modo landscape en teléfonos */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+    .header {
+        padding: 10px;
+    }
+
+    .hero-section,
+    .help-section,
+    .team-section {
+        min-height: auto;
+        padding: 20px 0;
+    }
+
+    .hero-content h2,
+    .help-content h2,
+    .team-content h2 {
+        font-size: 2em !important;
+    }
+
+    .stats-section,
+    .percentage-section {
+        min-height: 300px;
+    }
+
+    .newsletter-section {
+        min-height: auto;
+        padding: 30px 0;
+    }
+}
+
+/* Impresión */
+@media print {
+    .header,
+    .footer,
+    .newsletter-section,
+    .contact-section a {
+        display: none;
+    }
+    
+    body {
+        font-size: 12pt;
+        line-height: 1.4;
+    }
+    
+    .hero-content h2,
+    .help-content h2,
+    .team-content h2,
+    .trial-content h2 {
+        color: #000 !important;
+        font-size: 16pt !important;
+    }
+}
